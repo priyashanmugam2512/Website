@@ -109,12 +109,11 @@ function initSlickSlider() {
         ]
     });
 }
-function retrieveText(e) {
-    e.preventDefault()
+function retrieveText() {
     console.log('start')
     var cmt= document.getElementById('feedback').value;
     var  comment= document.getElementById('comments');
-    comment.innerHTML = cmt;
+    comment.innerHTML = "Comment: " + cmt;
     comment.style.display = 'block';
     console.log('startv')
 }

@@ -9,7 +9,7 @@ function validate(event) {
             const matchedUser = users.some(user => user.name === names && user.pass === pwd);
 
             if (matchedUser) {
-                window.location.href = 'index.html';
+                window.location.href = 'dashboard.html';
             } else {
                 showerrormsg();
             }

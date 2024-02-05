@@ -37,15 +37,13 @@
                 <div class="ms-2 fs-6 fw-bolder lh-sm text-capitalize d-flex align-items-center feedback">
                     <label for="feedback">Feedback</label><br>
                     <input   type="text"   id="feedback" class="mx-2 rounded-pill  border p-2" placeholder="Enter your Feedback" required/></br>
-                    <input type="submit" value="Post" class="rounded-pill border p-1" onsubmit="retrieveText()(event)"/>
-                    <div id="comments" style="display: none;"></div>
+                    <input type="submit" value="Post" class="rounded-pill border p-1" onclick="retrieveText()"/>
                 </div>
+                <div id="comments"class="ms-2 mt-2 fs-6 fw-bolder" style="display: none;"></div>
             </div>
             
         </div>
     </div>
     </div>
-
 </body>
-
 </html>
