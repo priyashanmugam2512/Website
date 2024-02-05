@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <script type="text/javascript" src="./assets/js/home.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-5">
+        <div class="text-center heading_section mb-5">
+            <h1 class="fs-2 lh-sm text-capitalize">Submit your UX Portfolio ideas</h1>
+        </div>
+        <div id="showmessage" style="display: none;" class="text-center py-2 mb-3 message"></div>
+        <div class="form_parent_section p-4 my-0 mx-auto application_form_section">
+            <form onsubmit="save(event)" >
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="fname" class="fs-6 fw-bolder">First Name:</label>
+                    <input type="text" id="fname"  required/></br>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="lname"  class="fs-6 fw-bolder">Last Name:</label>
+                    <input type="text" id="lname"  required/><br>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="mail_id"  class="fs-6 fw-bolder">Mail Id:</label>
+                    <input type="email" id="mail_id" class="email_field"  required/><br>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="mbl_num"  class="fs-6 fw-bolder">Mobile No:</label>
+                    <input type="text" id="mbl_num"  required/><br>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="job_title" class="fs-6 fw-bolder me-3">Job Title:</label>
+                    <input type="text" id="job_title" required/><br>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <label for="myfile"  class="fs-6 fw-bolder " >Upload the ideas:</label>
+                    <input type="file" id="myfile" multiple  required ><br>
+                </div>
+                <div class="mb-3">
+                    <Label  class="fs-6 fw-bolder">Area of expertise:</Label><br>
+                    <label >Html</label>
+                    <input type="radio" value="1" name="html" class="mb-2"/>1
+                    <input type="radio" value="2" name="html" class="mb-2"/>2
+                    <input type="radio" value="3" name="html" class="mb-2"/>3
+                    <input type="radio" value="4" name="html" class="mb-2"/>4
+                    <input type="radio" value="5" name="html"/>5<br>
+                    <label >Css</label>
+                    <input type="radio" value="1" name="css" class="mb-2"/>1
+                    <input type="radio" value="2" name="css" class="mb-2"/>2
+                    <input type="radio" value="3" name="css" class="mb-2"/>3
+                    <input type="radio" value="4" name="css" class="mb-2"/>4
+                    <input type="radio" value="5" name="css"/>5<br>
+                    <label>Javascript</label>
+                    <input type="radio" value="1" name="script" class="mb-2"/>1
+                    <input type="radio" value="2" name="script" class="mb-2"/>2
+                    <input type="radio" value="3" name="script" class="mb-2"/>3
+                    <input type="radio" value="4" name="script" class="mb-2"/>4
+                    <input type="radio" value="5" name="script"/>5<br>
+                    <label>React Js</label>
+                    <input type="radio" value="1" name="js" class="mb-2"/>1
+                    <input type="radio" value="2" name="js" class="mb-2"/>2
+                    <input type="radio" value="3" name="js" class="mb-2"/>3
+                    <input type="radio" value="4" name="js" class="mb-2"/>4
+                    <input type="radio" value="5" name="js"/>5<br>
+                </div>
+                <div class="mb-3">
+                    <label  class="fs-6 fw-bolder">Proficiency levels:</label><br>
+                    <label>English</label><br>
+                    <label>Speak</label>
+                    <input type="radio" value="1" name="Speak" class="mb-2"/>1
+                    <input type="radio" value="2" name="Speak" class="mb-2"/>2
+                    <input type="radio" value="3" name="Speak" class="mb-2"/>3
+                    <input type="radio" value="4" name="Speak" class="mb-2"/>4
+                    <input type="radio" value="5" name="Speak" class="mb-2"/>5<br>
+                    <label>Write</label>
+                    <input type="radio" value="1" name="write" class="mb-2"/>1
+                    <input type="radio" value="2" name="write" class="mb-2"/>2
+                    <input type="radio" value="3" name="write" class="mb-2"/>3
+                    <input type="radio" value="4" name="write" class="mb-2"/>4
+                    <input type="radio" value="5" name="write"/>5<br>
+                </div>
+                <input type="submit"  class="submit_btn fs-6 border-0 fw-bolder p-2 w-100 rounded-2" />
+            </form>
+        </div>
+        <div class="login_btn text-center" style="display: none; " >
+            <a href="login.html" class="submit_btn fs-6 border-0 fw-bolder p-2 w-100 rounded-2 text-decoration-none text-dark">Back To Login</a>
+        </div>
+    </div>
+</body>
+</html>

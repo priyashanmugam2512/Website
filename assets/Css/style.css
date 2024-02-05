@@ -1,0 +1,34 @@
+.application_form_section,.login_page_section,.login_form_section{width:100%;max-width: 500px;}
+.form_parent_section,.list_data,.login_form_section{background-color: #F0F0F0;box-shadow: 0 2px 14px #0000001a;}
+.email_field{margin-left: 26px;}
+input:focus{outline: none;}
+.heading_section{background: #FFC107;;padding: 25px;}
+.submit_btn{background-color: #fcb800;}
+.message{background-color:#ccc;}
+.list_data{padding: 20px;margin: 30px;cursor: pointer;}
+#list_data_section{width: 25%;background-color:#fff;box-shadow: 0 2px 14px #0000001a;}
+#expertise canvas{box-shadow: 0 2px 14px #0000001a;}
+#proficiency canvas{box-shadow: 0 2px 14px #0000001a;}
+#image_section img{width:70%}
+#image_section {margin: 30px 0px 50px 52px;}
+#skill_data_section{box-shadow: 0 2px 14px #0000001a;}
+.candidate_name h1{font-size: 16px;line-height: 24px; text-align: center;text-transform: capitalize;margin-top: 8px;}
+#expertise,#proficiency{width: 47%;margin: 0px auto;}
+.slick-prev{top: -3% !important;transform: rotate(90deg) !important}
+.slick-next{top: auto !important;    display: inline-block;transform: rotate(90deg) !important;}
+.slick-prev,.slick-next{left: 43% !important;right: 50% !important;}
+.slick-prev:before, .slick-next:before{color: #000 !important;}
+.list_candidate{position: relative;}
+.list_candidate_heading{position: absolute;left: 20%; z-index: 9;}
+
+@media (max-width:991px){
+#list_candidate{display: block !important;}
+#list_data_section{display: flex; width: 100% !important;}
+#skill_data_section{width: 100% !important;}
+.candidate_name h1{margin:0px;padding-top: 20px;}
+#image_section { margin: 30px 0px 45px 30px;}
+.application_form_section, .login_page_section, .login_form_section{width: 95%;}
+.feedback{padding-bottom:25px;display: block !important;margin:0px !important;text-align: center;}
+.feedback input{margin:10px 0px !important;}
+.list_candidate_heading {left: 32%;}
+}

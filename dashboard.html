@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/dashboard.js"></script>
+</head>
+<body>
+    <div class="mb-5">
+        <div class="text-center heading_section mb-5">
+            <h1 class="fs-2 lh-sm text-capitalize">Dashboard</h1>
+            <a href="login.html" class="text-dark">Return To Login</a>
+        </div>
+        <div id="list_candidate" class="d-flex flex-wrap justify-content-center list_candidate">
+            <h1 class="fs-6 pt-2 list_candidate_heading">List of Candidates</h1>
+            <div id="list_data_section"></div>
+            <div id="skill_data_section" class="w-50">
+                <div id="candidate_name" class="candidate_name"></div>
+                <div id="image_section" class="text-center"></div>
+                <div class="chart_section d-flex mb-4">
+                    <div id="expertise"></div>
+                    <div id="proficiency"></div>
+                </div>
+                <div class="ms-2 fs-6 fw-bolder lh-sm text-capitalize d-flex align-items-center feedback">
+                    <label for="feedback">Feedback</label><br>
+                    <input   type="text"   id="feedback" class="mx-2 rounded-pill  border p-2" placeholder="Enter your Feedback" required/></br>
+                    <input type="submit" value="Post" class="rounded-pill border p-1" onsubmit="retrieveText()(event)"/>
+                    <div id="comments" style="display: none;"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
